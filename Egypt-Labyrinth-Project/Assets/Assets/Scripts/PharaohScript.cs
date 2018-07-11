@@ -88,7 +88,7 @@ public class PharaohScript : MonoBehaviour {
 		
 					PharaohHit();
 					UpdateVidaPharaoh();
-		
+		            
 				}
 
 				flagAttack = !flagAttack;
@@ -103,7 +103,8 @@ public class PharaohScript : MonoBehaviour {
 		
 				AudioSource risada = GetComponent<AudioSource> ();
 				risada.Play ();	
-				PharaohAttack(); 
+				PharaohAttack();
+                StartCoroutine(WaitAttack());
 
 			}
 		}
@@ -138,6 +139,12 @@ public class PharaohScript : MonoBehaviour {
 		Destroy(gameObject);
 		ExitGame();
 	}	
+
+    IEnumerator WaitAttack()
+    {
+        yield return new WaitForSeconds(1.0f);
+        StartCoroutine(WaitAttack());
+    }
 		
 	private void ExitGame() 
 	{
