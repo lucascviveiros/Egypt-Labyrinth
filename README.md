@@ -6,7 +6,7 @@ This is a first person game that simulates a Labyrinth in Egypt made with unity3
 - Sword Attack (Mouse Right Click) 
 - Some animations and sounds
 - Labyrinth made in Blender
-- NavMesh (follow the player)
+- NavMesh (AI follow the player)
 - Free Assets used
 - Scripts in Assets
 
