@@ -9,7 +9,7 @@ This is a first person game that simulates a Labyrinth in Egypt made with unity3
 - RigidBody and colliders
 - Labyrinth made in Blender
 - NavMesh (AI follow the player)
-- Free Assets used
+- Free Assets 
 - Scripts in Assets
 
 ![unityex](https://user-images.githubusercontent.com/21102697/52628230-210a7a00-2eaf-11e9-83ed-bbe97f2bdb36.png)
