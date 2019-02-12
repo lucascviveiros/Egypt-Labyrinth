@@ -11,6 +11,7 @@ This is a first person game that simulates a Labyrinth in Egypt made with unity3
 - NavMesh (AI follow the player)
 - Free Assets 
 - Scripts in Assets
+- Tip: follow the right way ;)
 
 ![unityex](https://user-images.githubusercontent.com/21102697/52628230-210a7a00-2eaf-11e9-83ed-bbe97f2bdb36.png)
 ![deepin screenshot_selecionar area_20180707203209](https://user-images.githubusercontent.com/21102697/42414228-2695a576-8220-11e8-852e-73ab1c5d2b62.png)
