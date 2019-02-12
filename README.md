@@ -4,6 +4,7 @@ This is a first person game that simulates a Labyrinth in Egypt made with unity3
 
 - First Person (Keyboard-keys: W A S D)  
 - Sword Attack (Mouse Right Click) 
+- Escape (Esc Key)
 - Animations and sounds
 - Blood Particles
 - RigidBody and colliders
