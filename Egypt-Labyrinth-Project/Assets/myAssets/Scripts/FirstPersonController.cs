@@ -3,6 +3,8 @@ using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 using UnityStandardAssets.Utility;
 using Random = UnityEngine.Random;
+using UnityEngine.SceneManagement;
+
 
 namespace UnityStandardAssets.Characters.FirstPerson
 {
@@ -98,7 +100,12 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
 			}
 
+			if (Input.GetKey(KeyCode.Escape)) {
+				Exit();
+			}
+
         }
+
 
 		void SwordAttack(){
 //			AudioSource som = GetComponent<AudioSource>();
@@ -106,9 +113,18 @@ namespace UnityStandardAssets.Characters.FirstPerson
 			anim.Play("SwordAnim");
 		}
 
+		private void Exit()
+		{
+#if UNITY_EDITOR
+			UnityEditor.EditorApplication.isPlaying = false;
+#else
+            SceneManager.LoadScene("scene-0");
+#endif
+		}
 
 
-        private void PlayLandingSound()
+
+		private void PlayLandingSound()
         {
             m_AudioSource.clip = m_LandSound;
             m_AudioSource.Play();
