@@ -8,6 +8,8 @@ public class MenuScript : MonoBehaviour {
 
 	public Button btnStart; 
 	public Button btnExit;
+	public GameObject pauseMenuUI;
+	public static bool GameIsPaused = false;
 
 	void Start () 
 	{
@@ -21,6 +23,31 @@ public class MenuScript : MonoBehaviour {
 
 	private void StartGame(){
 		SceneManager.LoadScene("scene-1");
+	}
+
+	void Update() {
+		if (Input.GetKey(KeyCode.Escape))
+		{
+			if (GameIsPaused)
+			{
+				Resume();
+			}
+			else {
+				Pause();
+			}
+		}
+	}
+
+	void Resume() {
+		pauseMenuUI.SetActive(false);
+		Time.timeScale = 1f;
+		GameIsPaused = false;
+	}
+
+	void Pause() {
+		pauseMenuUI.SetActive(true);
+		Time.timeScale = 0;
+		GameIsPaused = true;
 	}
 
 	private void ExitGame() 

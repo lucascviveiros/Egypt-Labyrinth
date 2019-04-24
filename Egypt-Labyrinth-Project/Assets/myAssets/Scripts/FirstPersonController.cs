@@ -100,10 +100,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
 			}
 
-			if (Input.GetKey(KeyCode.Escape)) {
-				Exit();
-			}
-
         }
 
 
@@ -112,17 +108,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
 			//print("Attack");
 			anim.Play("SwordAnim");
 		}
-
-		private void Exit()
-		{
-#if UNITY_EDITOR
-			UnityEditor.EditorApplication.isPlaying = false;
-#else
-            SceneManager.LoadScene("scene-0");
-#endif
-		}
-
-
 
 		private void PlayLandingSound()
         {
