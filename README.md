@@ -20,6 +20,5 @@ This is a first person game that simulates a Labyrinth in Egypt made with unity3
 ![screenshot_4](https://user-images.githubusercontent.com/21102697/42581628-23aeb57a-8525-11e8-8159-554473112555.png)
 
 
-If you want improve! 
 
 
