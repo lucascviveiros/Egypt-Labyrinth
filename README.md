@@ -1,6 +1,6 @@
 # Egypt-Labyrinth-Unity3d
 
-Basic first person game in Egypt made with unity3d. 
+First person game in Egypt made with Unity3d/Blender. 
 
 - First Person (Keyboard-keys: W A S D)  
 - Sword Attack (Mouse Right Click) 
